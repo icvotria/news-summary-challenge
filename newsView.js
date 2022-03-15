@@ -50,4 +50,4 @@ class NewsView {
   };
 }
 
-module.exports = NewsView;
+export default NewsView;

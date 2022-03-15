@@ -48,4 +48,4 @@ class NewsModel {
   }
  }
 
-module.exports = NewsModel;
+export default NewsModel;

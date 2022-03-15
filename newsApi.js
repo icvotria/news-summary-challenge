@@ -1,4 +1,4 @@
-const apiKey = require(`./apiKey`);
+const apiKey = require('./apiKey');
 
 class NewsApi {
   getNews(searchTerm, callback) {
@@ -10,4 +10,4 @@ class NewsApi {
   };
 }
 
-module.exports = NewsApi;
+export default NewsApi;
