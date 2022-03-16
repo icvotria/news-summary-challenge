@@ -2,6 +2,11 @@ const NewsModel = require('./newsModel');
 const NewsApi = require('./newsApi');
 const NewsView = require('./newsView');
 
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+
+global.document = new JSDOM('').window.document;
+
 const newsModel = new NewsModel;
 const newsApi = new NewsApi(process.env.API_KEY);
 const newsView = new NewsView(newsModel, newsApi);

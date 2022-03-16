@@ -4,6 +4,7 @@ class NewsView {
     this.mainContainerEl = document.querySelector('#main-container');
     this.buttonEl = document.querySelector('#search-button');
     this.inputEl = document.querySelector('#search-input');
+    console.log(this.inputEl)
     this.inputEl.value = '';
 
     this.buttonEl.addEventListener('click', () => {
